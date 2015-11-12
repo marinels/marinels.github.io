@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "reveal.js Demo",
+    "packageVersion": "0.1.0",
+    "revealTheme": "black",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
