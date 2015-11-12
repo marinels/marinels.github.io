@@ -1,0 +1,6 @@
+node_modules
+bower_components/jquery/build/
+bower_components/jquery/speed/
+bower_components/jquery/src/
+bower_components/jquery/test/
+*.log
