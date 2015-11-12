@@ -22,4 +22,4 @@ Slide content is stored in the `steps` directory using a *one file per slide* co
 
 Testing locally requires installing the node and bower packages, then serving the files locally using grunt.
 
-`npm install && bower install && grunt server`
+`npm install && bower install && grunt`

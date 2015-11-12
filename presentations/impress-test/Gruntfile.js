@@ -52,4 +52,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
+
+    grunt.registerTask('default', ['server']);
 };
