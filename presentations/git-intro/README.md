@@ -8,7 +8,7 @@ This is a [reveal.js](http://lab.hakim.se/reveal-js) slide presentation on the t
 
 This presentation was created using the [reveal yeoman generator](https://github.com/slara/generator-reveal).
 
-`npm install -g yo generator-reveal`
+`npm install -g yo generator-reveal grunt`
 
 ### How to Add a Slide
 
@@ -22,4 +22,4 @@ Slide content is stored in the `slides` directory using a *one file per slide* c
 
 Testing locally requires installing the node and bower packages, then serving the files locally using grunt.
 
-`npm install && bower install && grunt serve`
+`npm install && bower install && grunt`
