@@ -23,3 +23,9 @@ Slide content is stored in the `slides` directory using a *one file per slide* c
 Testing locally requires installing the node and bower packages, then serving the files locally using grunt.
 
 `npm install && bower install && grunt`
+
+### How to deploy
+
+Reveal needs to scan the presentation configuration (`list.json`) and generate the entry point (`index.html`). Running the following command will generate the `index.html` file.
+
+`grunt buildIndex`
