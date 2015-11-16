@@ -1,5 +1,13 @@
 [
     "index.md",
     "what-makes-git-different.md",
-    "local-vs-remote.md"
+    "local-vs-remote.md",
+    "sourcetree-and-diffmerge.md",
+    "cloning-and-checkout.md",
+    "staging-and-committing.md",
+    "stashing-and-resetting.md",
+    "the-commit-graph-and-branching.md",
+    "merging-and-rebasing.md",
+    "pushing-and-pulling.md",
+    "pros-and-cons.md"
 ]
