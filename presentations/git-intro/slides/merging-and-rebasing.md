@@ -1,10 +1,30 @@
 ##  Merging and Rebasing
 
-TBD
+* <!-- .element: class="fragment" --> Merging takes two branches (or commits) and produces a new merged commit
+* <!-- .element: class="fragment" --> Rebasing takes two branches (or commits) and chains them together (linear)
+
+---
+
+## Merging
+
+* Fast-forward merging is allowed when the path between your commit and the target is a straight line
+* Fast-forward merges simply relocate the branch pointer up the chain
+* Non fast-forward merging creates a new merge commit that joins two parent commits
+* You can always force a new merge commit to be created
+* The merge commit protects both parents from being orphaned
+
+---
+
+## Rebasing
+
+* Rebasing is used to bring in changes from another (target) branch by relocating your (source) branch on top
+* From the point of divergence, cut the fork and connect the tip of the target to the base of the source
+* Take a fork and create a straight line
+* Source changes are now embedded behind your commits
 
 note:
-    * Merging in Git similar to other merging operations is called a non-fast-forward merge
-        * These create a new snapshot that includes the merge
-    * Fast-forward merges does not create a new snapshot, they simply move the branch pointer
-    * Rebasing is a Git operation that takes a common point of ancestry between two branches and *replays* commits on top
-        * This is one of the most complicated struggles of learning Git
+  Rebasing is a Git operation that takes a common point of ancestry between two branches and *replays* commits on top
+
+    This is one of the most complicated struggles of learning Git
+
+    This results in a history *re-write*

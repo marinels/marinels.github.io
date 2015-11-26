@@ -1,9 +1,11 @@
 ##  Pros and Cons
 
-TBD
+* <!-- .element: class="fragment" --> **PRO**: Git is very powerful because it allows very fine grained control over versioning
+* <!-- .element: class="fragment" --> **PRO**: Git has a massive user base and is used by many (large and small) tech companies
+* <!-- .element: class="fragment" --> **CON**: Git's complex nature and steep (but short) learning curve can deter motivation
+* <!-- .element: class="fragment" --> **CON**: Git stores all snapshots in its local database (can grow *very large*)
 
 note:
-    * Git is a very powerful system, it is widely used and accepted as the standard for version control
-    * Git is built on many small (command line) utilities that do one job really well
-    * Git struggles with many large files (it is well known it does not work well for game development)
-        * This has been addressed to some extent with the Git-LFS extension
+  Git-LFS exists to deal with large files
+
+  Git is built on many small (command line) utilities that do one job really well

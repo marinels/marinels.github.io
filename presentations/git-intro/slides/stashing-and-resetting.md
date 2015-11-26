@@ -1,11 +1,25 @@
 ##  Stashing and Resetting
 
-TBD
+* <!-- .element: class="fragment" --> Stashing is a mechanism of saving your changes (locally) without making a commit
+* <!-- .element: class="fragment" --> Resetting is a mechanism of moving around the commit chain
+
+---
+
+## The Stashes
+
+* Live in your local repository but cannot be synced to any remote
+* Essentially a patch that can be applied locally
+* Useful for applying uncommitted changes to a new branch when checking out is not an option
+* Useful for applying routine changes that you don't want to commit
+
+---
+
+## Reset
+
+* Allows you to move to a snapshot without changing your current branch
+* You can throw away changes between current and destination commits (hard reset)
+* You can keep changes between current and destination commits (soft/mixed reset)
+* Resetting allows you to relocate your branch pointer to a new commit
 
 note:
-    * Stashing allows you to set aside some changes locally so that you can change to a new snapshot
-        * Stashes are local only and cannot be shared
-        * Stashes should be used for temporary storage of changes, or longer term storage of routine changes that should not be versioned
-    * Resetting is a Git mechanism to move about the commit chain
-        * A hard reset *throws away* changes
-        * A soft/mixed reset keeps changes (soft auto-stages changes, mixed does not)
+  soft reset auto-stages changes, mixed does not
