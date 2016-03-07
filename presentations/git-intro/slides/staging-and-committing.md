@@ -10,15 +10,21 @@
 * The staging area (aka *Index*) allows you to carefully craft your commits so they contain related changes
 * SourceTree simulates checkbox file selection to ease the transition
 * Stage individual lines or contextually nearby blocks of changes (called hunks)
+* Renames (and relocates) are automatically detected by Git upon staging
+    * These will appear as a delete and an add until staged
 
 ---
 
 ## Commits
 
 * Save one or more file changes to the commit chain
-* Every commit generates a unique hash to identify itself with
-* All commits are saved for a period of time
+* Every commit generates a unique hash to identify itself
+    * Hash includes parent hash, current file hashes, commit metadata
+* All commits are saved for a period of time even if they are orphaned
+* Orphaned commits are garbage collected after an expiry duration
+    * Default duration is 2 weeks
 * Any commit can be re-ordered, changed, combined
+    * Any of these operations will create a new commit (with a new hash)
 * All commits point to their parent commit (except the initial commit)
 
 note:
