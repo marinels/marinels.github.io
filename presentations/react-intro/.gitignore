@@ -1,6 +1,41 @@
 /node_modules
-/bower_components/reveal.js/test
 /dist
+
+# ignore everything in bower_components by default
+/bower_components/*
+
+# whitelist just the highlightjs style we are using
+!/bower_components/highlightjs/
+/bower_components/highlightjs/*
+!/bower_components/highlightjs/styles/
+/bower_components/highlightjs/styles/*
+!/bower_components/highlightjs/styles/agate.css
+
+# ignore libs and plugins by default 
+!/bower_components/reveal.js/
+/bower_components/reveal.js/*
+!/bower_components/reveal.js/lib/
+/bower_components/reveal.js/lib/*
+!/bower_components/reveal.js/lib/js/
+/bower_components/reveal.js/lib/js/*
+!/bower_components/reveal.js/plugin/
+/bower_components/reveal.js/plugin/*
+!/bower_components/reveal.js/plugin/markdown/
+/bower_components/reveal.js/plugin/markdown/*
+!/bower_components/reveal.js/plugin/highlight/
+/bower_components/reveal.js/plugin/highlight/*
+!/bower_components/reveal.js/plugin/zoom-js/
+/bower_components/reveal.js/plugin/zoom-js/*
+!/bower_components/reveal.js/plugin/notes/
+/bower_components/reveal.js/plugin/notes/*
+
+# whitelist just the libs and plugins we are using
+!/bower_components/reveal.js/lib/js/classList.js
+!/bower_components/reveal.js/plugin/markdown/marked.js
+!/bower_components/reveal.js/plugin/markdown/markdown.js
+!/bower_components/reveal.js/plugin/highlight/highlight.js
+!/bower_components/reveal.js/plugin/zoom-js/zoom.js
+!/bower_components/reveal.js/plugin/notes/notes.js
 
 *.log
 .sass-cache
