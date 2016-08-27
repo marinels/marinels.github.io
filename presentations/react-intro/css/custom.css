@@ -1,3 +1,4 @@
-.reveal code {
-  padding: 0 5px;
+pre.inline, pre.inline code.hljs {
+  display: inline;
+  font-size: inherit;
 }
