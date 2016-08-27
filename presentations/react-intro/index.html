@@ -86,7 +86,11 @@
             { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); }, 
               callback: function() {
                 marked.Renderer.prototype.codespan = function(x) {
-                  return `<pre class='inline'><code>${ x }</code></pre>`;
+                  var match = x.match(/^((lang-\w+) )?(.*)/);
+                  var code = match == null ? x : match[3];
+                  var lang = match == null ? '' : match[2];
+
+                  return `<pre class='inline'><code class='${ lang }'>${ code }</code></pre>`;
                 }
               } 
             },
