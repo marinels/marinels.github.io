@@ -17,7 +17,7 @@
 ## Declarative Composition
 
 * JSX (and *TSX*) allows inline composition of component structure
-* Extensible `JSX.Element` class allows easy creation of custom components
+* Extensible `lang-ts JSX.Element` and `lang-ts React.Component` classes allows easy creation of custom components and tag extensions
 * Many libraries that have *Reactified* popular web components
 
 ---
