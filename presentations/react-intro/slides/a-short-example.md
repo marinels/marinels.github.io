@@ -43,6 +43,8 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
 ```
 
 * extend `lang-ts React.Component<P, S>` to create a composable **Component**
+    * `P` is the input properties interface type
+    * `S` is the component state interface type
 * Using **TypeScript**, we can assign typings for the **input** props and component **state**
 * We are using `lang-ts any` for the state generic typing because our component has no state
 
