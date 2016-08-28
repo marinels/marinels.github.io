@@ -1,7 +1,7 @@
 ##  A Short Example
 
 * We will build a basic **Button** component that will allow us to customize the button text *per instance*
-* We will be able to optionally prepend a label as well as a `lang-ts click` function
+* We will be able to optionally prepend a label as well as define a custom `click` function
 
 ---
 
@@ -12,7 +12,7 @@ import * as React from 'react';
 ```
 
 * The React library is exported **globally** as a single entry point
-* We must then import the entry point (`lang-ts *`) into an alias (`lang-ts React`)
+* We must then import the entry point (`*`) into an alias (`React`)
 
 ---
 
@@ -26,10 +26,10 @@ export interface LabelButtonProps {
 }
 ```
 
-* Note that both `lang-ts label` and `lang-ts onClick` are suffixed with a `lang-ts ?`
+* Note that both `label` and `onClick` are suffixed with a `?`
     * This indicates that both are optional input parameters
-    * `lang-ts text` on the other hand is a **required** parameter
-* Note that `lang-ts label` is typed as `lang-ts any`
+    * `text` on the other hand is a **required** parameter
+* Note that `label` is typed as `lang-ts any`
     * This indicates that we can pass in any value (including another **component**!)
 
 ---
@@ -93,7 +93,7 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
     * We can only render this markup in a `*.jsx` or `*.tsx`
 * We can define expression blocks using **curly-braces**
     * These are expressions only, statements are not permitted
-* We use `lang-ts className` instead of `lang-ts class`
+* We use `className` instead of `lang-ts class`
     * the value is passed on and rendered as `lang-ts class`
 
 note:
