@@ -10,6 +10,8 @@
 * https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
 * https://basarat.gitbooks.io/typescript/content/docs/jsx/tsx.html
 * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/react/react.d.ts
+* https://www.typescriptlang.org/
+* https://www.typescriptlang.org/docs/handbook/jsx.html
 
 note:
     None
