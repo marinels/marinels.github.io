@@ -62,7 +62,7 @@
         
           
             
-  <section data-markdown="slides/further-reader.md" data-separator="^\r?\n----\r?\n$" data-separator-vertical="^\r?\n---\r?\n$"></section>
+  <section data-markdown="slides/further-reading.md" data-separator="^\r?\n----\r?\n$" data-separator-vertical="^\r?\n---\r?\n$"></section>
 
 
           
@@ -96,7 +96,7 @@
                 marked.Renderer.prototype.codespan = function(x) {
                   var match = x.match(/^((lang-\w+) )?(.*)/);
                   var code = match == null ? x : match[3];
-                  var lang = match == null ? '' : match[2];
+                  var lang = (match == null || match[2] == null) ? 'hljs nohighlight' : match[2];
 
                   return `<pre class='inline'><code class='${ lang }'>${ code }</code></pre>`;
                 }
