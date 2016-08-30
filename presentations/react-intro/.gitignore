@@ -14,8 +14,20 @@
 # ignore libs and plugins by default 
 !/bower_components/reveal.js/
 /bower_components/reveal.js/*
+!/bower_components/reveal.js/css/
+/bower_components/reveal.js/css/*
+!/bower_components/reveal.js/css/print/
+/bower_components/reveal.js/css/print/*
+!/bower_components/reveal.js/css/theme/
+/bower_components/reveal.js/css/theme/*
+!/bower_components/reveal.js/js/
+/bower_components/reveal.js/js/*
 !/bower_components/reveal.js/lib/
 /bower_components/reveal.js/lib/*
+!/bower_components/reveal.js/lib/font/
+/bower_components/reveal.js/lib/font/*
+!/bower_components/reveal.js/lib/font/source-sans-pro/
+/bower_components/reveal.js/lib/font/source-sans-pro/*
 !/bower_components/reveal.js/lib/js/
 /bower_components/reveal.js/lib/js/*
 !/bower_components/reveal.js/plugin/
@@ -29,8 +41,15 @@
 !/bower_components/reveal.js/plugin/notes/
 /bower_components/reveal.js/plugin/notes/*
 
-# whitelist just the libs and plugins we are using
+# whitelist just the css, libs, and plugins we are using
+!/bower_components/reveal.js/js/reveal.js
+!/bower_components/reveal.js/css/reveal.css
+!/bower_components/reveal.js/css/print/paper.css
+!/bower_components/reveal.js/css/theme/black.css
+!/bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro*
 !/bower_components/reveal.js/lib/js/classList.js
+!/bower_components/reveal.js/lib/js/head.min.js
+!/bower_components/reveal.js/lib/js/reveal.js
 !/bower_components/reveal.js/plugin/markdown/marked.js
 !/bower_components/reveal.js/plugin/markdown/markdown.js
 !/bower_components/reveal.js/plugin/highlight/highlight.js
