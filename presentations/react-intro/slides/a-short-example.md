@@ -13,6 +13,8 @@ import * as React from 'react';
 
 * The React library is exported **globally** as a single entry point
 * We must then import the entry point (`*`) into an alias (`React`)
+* We can then make use of `React` exports by accessing properties on the `React` alias
+* Always import `React` when using **TSX**, even if you don't use the `React` alias
 
 ---
 
@@ -26,6 +28,7 @@ export interface LabelButtonProps {
 }
 ```
 
+* Component input properties are defined as an **interface** (*contract*) for that component
 * Note that both `label` and `onClick` are suffixed with a `?`
     * This indicates that both are optional input parameters
     * `text` on the other hand is a **required** parameter
@@ -42,11 +45,12 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
 }
 ```
 
+* Using **TypeScript**, we can assign typings for the **input** props and component **state**
 * extend `lang-ts React.Component<P, S>` to create a composable **Component**
     * `P` is the input properties interface type
     * `S` is the component state interface type
-* Using **TypeScript**, we can assign typings for the **input** props and component **state**
-* We are using `lang-ts any` for the state generic typing because our component has no state
+* We are using `lang-ts any` for the state typing because our component has no state
+    * This means our component is not expected to dynamically re-render itself
 
 ---
 
@@ -58,7 +62,8 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
   };
 ```
 
-* If no property is provided at *composition*, then *My Button* is used as a default
+* We need only define a static object with `key`/`value` pairs to setup input defaults
+* If no property is provided at *composition*, then `lang-ts 'My Button'` is used as a default
 
 ---
 
@@ -72,8 +77,9 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
   }
 ```
 
-* By defining the function locally, we can ensure that our button's compositiono is sound
-* If a click handler was provided at composition, then we forward the call onwards
+* By defining the function locally, we can ensure that our button's composition is sound
+    * our button clicks will always at least hit this *internal* function
+* If a click handler was provided at composition (as an input), then we **forward** the call onwards
 
 ---
 
@@ -91,12 +97,38 @@ export class LabelButton extends React.Component<LabelButtonProps, any> {
 ```
 
 * We can render **JSX**/**TSX** directly within a function
-    * We need to inform typescript's `tsconfig.json` that `"jsx": "react"`
+    * We need to inform typescript's `tsconfig.json` that `lang-json "jsx": "react"`
     * We can only render this markup in a `*.jsx` or `*.tsx`
 * We can define expression blocks using **curly-braces**
     * These are expressions only, statements are not permitted
-* We use `className` instead of `lang-ts class`
-    * the value is passed on and rendered as `lang-ts class`
+    * Prepare more complex variables before the return statement and reference them here
+* We use `lang-ts className` instead of `lang-ts class` on **HTML** tags
+    * The value is rendered as `lang-ts class`
+    * We can use `npm` module `classnames` to perform **dynamic** *classing* of tags
+
+---
+
+#### Component Containment
+
+```
+  render() {
+    return (
+      <div className='ContainerButton'>
+        <button className='ContainerButton-button' onClick={ this.onClick }>{ this.props.children }</button>
+      </div>
+    );
+  }
+
+// ...
+
+<ContainerButton onClick={ () => { console.log('clicked!'); } }>
+  <span>This is the button content</span>
+</ContainerButton>
+```
+
+* React supports containment using a special `lang-ts props.children`
+* This allows us to supply complex internal structure to the component
+    * The component doesn't need to know about how to render it's children
 
 note:
-    
+    none
