@@ -24,5 +24,6 @@
 ## Research Resources
 
 * [Streams, Streams Everywhere! An Introduction to Rx](http://www.slideshare.net/andrzej_sitek/streams-streams-everywhere-an-introduction-to-rx)
+* [A Brief, Incomplete and Mostly Wrong History of Programming Languages](http://james-iry.blogspot.ca/2009/05/brief-incomplete-and-mostly-wrong.html)
 
 note:
