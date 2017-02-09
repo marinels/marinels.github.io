@@ -5,7 +5,7 @@
     * creation, transform, filter, combine, math, backpressure, reduce, side effect
 * Operators are declarative, similar to LINQ <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Some Pseudocode
 

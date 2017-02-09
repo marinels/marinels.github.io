@@ -4,7 +4,7 @@
 * iterate interactive data, produce values <!-- .element: class="fragment" -->
 * await reactive data, produce observables <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Interactive Data
 
@@ -12,7 +12,7 @@
 * Synchronous <!-- .element: class="fragment" -->
 * Operators applied immediately <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Reactive Data
 
