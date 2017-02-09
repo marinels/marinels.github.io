@@ -3,7 +3,7 @@
 * [**Tetris**! A completely reactive implemetation](http://bokuweb.github.io/rxjs-tetris/)
 * View the [Source code](https://github.com/bokuweb/rxjs-tetris)
 
-----
+---
 
 ### How it works
 

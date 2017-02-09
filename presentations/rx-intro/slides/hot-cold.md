@@ -4,7 +4,7 @@
 * Hot observables fire events whether an observer is watching or not <!-- .element: class="fragment" -->
 * Cold observables only fire events once an observer is watching <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Hot Observables
 
@@ -12,7 +12,7 @@
 * No observers means events evaporate <!-- .element: class="fragment" -->
 * Convert cold to hot by using a <!-- .element: class="fragment" --> `Subject`
 
-----
+---
 
 ### Cold Observables
 
