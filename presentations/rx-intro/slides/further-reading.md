@@ -16,6 +16,8 @@
 * [RxJS 4 Online Book](https://xgrommx.github.io/rx-book/)
 * [RxJS Learning Resource](https://www.learnrxjs.io/)
 * [My RxJS v5 Sandbox](http://codepen.io/patsissons/pen/oYwXvz)
+* [RxMarbles](http://rxmarbles.com/)
+* [Introduction to Rx](http://introtorx.com/)
 
 ---
 
