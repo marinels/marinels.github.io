@@ -1,0 +1,24 @@
+{
+  "name": "introduction-to-rx",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "coffeelint": "^1.0.0",
+    "generator-reveal": "^0.5.9",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-coffeelint": "0.0.16",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt test",
+    "bower": "bower",
+    "grunt": "grunt"
+  }
+}

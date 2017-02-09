@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Introduction to Reactive Programming",
+    "packageVersion": "0.1.0",
+    "revealTheme": "black",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
