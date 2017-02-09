@@ -5,14 +5,14 @@
 * They can consume an observable and produce events <!-- .element: class="fragment" -->
 * They also support interactive events <!-- .element: class="fragment" -->
 
-----
+---
 
 ### BehaviourSubject
 
 * <!-- .element: class="fragment" --> **BehaviourSubject** persists the most recent value
 * You can introspect the current value of this subject <!-- .element: class="fragment" -->
 
-----
+---
 
 ### ReplaySubject
 

@@ -5,14 +5,14 @@
 * <!-- .element: class="fragment" --> `complete` provides stream completion handling
 * <!-- .element: class="fragment" --> `subscribe` can be called with no arguments
 
-----
+---
 
 ### Events
 
 * Act as a termination to the stream composition <!-- .element: class="fragment" -->
 * Fired for every event <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Errors
 
@@ -20,7 +20,7 @@
 * If omitted, errors will bubble up synchronously and kill the stream asynchronously <!-- .element: class="fragment" -->
 * Will fire once after an error then the stream will die <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Completion
 

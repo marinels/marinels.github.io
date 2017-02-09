@@ -4,7 +4,7 @@
 * Side effects are observable stream actions that modify global state <!-- .element: class="fragment" -->
 * Side effect actions can be applied to events, errors, and completion <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Reasons to Use Side Effects
 

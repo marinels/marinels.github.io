@@ -3,14 +3,14 @@
 * Rx is all about observables and Observers <!-- .element: class="fragment" -->
 * Producers and Consumers <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Observables
 
 * Observables produce events asynchronously <!-- .element: class="fragment" -->
 * Observables can be altered using operators <!-- .element: class="fragment" -->
 
-----
+---
 
 ### Observers
 
