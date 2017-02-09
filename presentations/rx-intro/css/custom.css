@@ -1,0 +1,11 @@
+.reveal pre code {
+  max-height: 100%;
+}
+
+pre.inline {
+  font-size: inherit;
+}
+
+pre.inline, pre.inline code {
+  display: inline;
+}
